@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pritesh Kumar | AI Developer</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- 3D Background Canvas -->
+    <canvas id="bgCanvas"></canvas>
+
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+        <div class="nav-logo">💻</div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active" data-text="Home"></a></li>
+            <li><a href="#about" class="nav-link" data-text="About"></a></li>
+            <li><a href="#skills" class="nav-link" data-text="Skills"></a></li>
+            <li><a href="#projects" class="nav-link" data-text="Work"></a></li>
+            <li><a href="#contact" class="nav-link" data-text="Contact"></a></li>
+        </ul>
+        <div class="nav-toggle">
+            <div class="hamburger"></div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content-wrapper">
+        <!-- Hero Section -->
+        <section id="hero" class="fullscreen-section">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Hey there! Glad you're here 👋</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <div class="typewriter">
+                        <span class="type-text"> </span>
+                    </div>
+                    <p class="hero-desc">I'm a Computer Application graduate specializing in AI/ML development and
+                        full-stack engineering. My passion lies at the intersection of technology and creativity,
+                        crafting solutions that push boundaries.</p>
+                </div>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-holographic">
+                        <span>View Work</span>
+                        <div class="hover-effect"></div>
+                    </a>
+                    <a href="#contact" class="btn-holographic secondary">
+                        <span>Contact Me</span>
+                        <div class="hover-effect"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <div class="scroll-indicator">
+                    <div class="scroll-line"></div>
+                    <span>Scroll</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2 class="section-title"><span>01.</span> About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-bio">
+                            <h3>Building the Future with Code</h3>
+                            <p>Dynamic Computer Application student with practical experience in web development, AI/ML, and real-world project deployments. Demonstrated ability to build responsive websites and deploy full-stack applications while collaborating with teams to deliver high-quality client solutions. Proven skills as a project manager and analytical problem-solver, complemented by strong organizational and scheduling capabilities. Committed to leveraging development expertise in a challenging role that fosters growth within modern web technologies.</p>
+                            <div class="about-highlights">
+                                <div class="highlight-card">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-microchip"></i>
+                                    </div>
+                                    <div class="highlight-content">
+                                        <h4>AI/ML Dev</h4>
+                                        <p>90% accuracy in NLP models</p>
+                                    </div>
+                                </div>
+                                <div class="highlight-card">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="highlight-content">
+                                        <h4>Full-Stack Dev</h4>
+                                        <p>5+ projects deployed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-image">
+                            <div class="image-wrapper">
+                                <div class="glow-effect"></div>
+                                <img src="/assets/profile.png" alt="Pritesh Kumar" class="profile-img">
+                            </div>
+                            <div class="tech-orbits">
+                                <div class="orbit orbit-1">
+                                    <div class="orbiting-tech">
+                                        <i class="fab fa-python"></i>
+                                    </div>
+                                </div>
+                                <div class="orbit orbit-2">
+                                    <div class="orbiting-tech">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                </div>
+                                <div class="orbit orbit-3">
+                                    <div class="orbiting-tech">
+                                        <i class="fab fa-js"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-padding bg-dark">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2 class="section-title"><span>02.</span> Technical Arsenal</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="skills-grid">
+                    <!-- Skill Category 1 -->
+                    <div class="skill-category" data-aos="fade-up">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>AI/ML</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>TensorFlow</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>PyTorch</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>NLP</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Category 2 -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Java</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Category 3 -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>Data</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>SQL</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>MongoDB</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Pandas</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-padding">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2 class="section-title"><span>03.</span> Notable Creations</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="projects-container">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-aos="fade-up">
+                        <div class="project-preview">
+                            <div class="project-image">
+                                <img src="./assets/cyberbullying.png" alt="Cyberbullying Detection">
+                                <div class="project-overlay">
+                                    <div class="project-badge">AI/ML</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Cyberbullying Detection</h3>
+                            <p class="project-desc">LSTM-based system detecting toxic content in regional languages with 90% accuracy.</p>
+                            <ul class="project-tech">
+                                <li>Python</li>
+                                <li>LSTM</li>
+                                <li>Flask</li>
+                                <li>TF-IDF</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://cyberbullying-detection-bhojpuri.onrender.com/" class="link-holographic">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/rajputpritesh1/cyberguard" class="link-holographic">
+                                    <i class="fab fa-github"></i>
+                                    <span>View Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="project-preview">
+                            <div class="project-image">
+                                <img src="./assets/linkwaale.png" alt="Linkwaale App Project">
+                                <div class="project-overlay">
+                                    <div class="project-badge">WordPress</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Linkwaale App</h3>
+                            <p class="project-desc">Developed and transformed a WordPress site into a functional Android app to boost mobile engagement by 30%.</p>
+                            <ul class="project-tech">
+                                <li>WordPress</li>
+                                <li>PHP</li>
+                                <li>AppMySite</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://linkwaale.com" class="link-holographic" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Visit Site</span>
+                                </a>
+                                <a href="https://play.google.com/store/apps/datasafety?id=app.linkwaale.android"
+                                    class="link-holographic" target="_blank">
+                                    <i class="fab fa-android"></i>
+                                    <span>Play Store</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/projects.html" class="btn-holographic primary">
+                        <span>View All Projects</span>
+                        <div class="hover-effect"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding bg-dark">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2 class="section-title"><span>04.</span> Get In Touch</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="contact-info">
+                            <h3>Let's Build Something Amazing</h3>
+                            <p>Have a project in mind or want to discuss potential opportunities? I'm currently available for freelance work and full-time positions.</p>
+                            <div class="contact-methods">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <h4>Email</h4>
+                                        <a href="mailto:priteshk105@gmail.com">priteshk105@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <h4>Phone</h4>
+                                        <a href="tel:+918544685939">+91 8544685939</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <h4>Location</h4>
+                                        <span>Prayagraj, India</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="social-links">
+                                <a href="https://github.com/rajputpritesh1" class="social-icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/rajputpritesh1" class="social-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                                <div class="input-highlight"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                                <div class="input-highlight"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Subject">
+                                <div class="input-highlight"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Your Message" required></textarea>
+                                <div class="input-highlight"></div>
+                            </div>
+                            <button type="submit" class="btn-holographic submit-btn">
+                                <span>Send Message</span>
+                                <div class="hover-effect"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
